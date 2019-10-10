@@ -58,6 +58,6 @@ public class Imovel {
 
     @Override
     public String toString() {
-        return "Imovel{" + "codigo=" + codigo + ", regiao=" + regiao + ", valor=" + valor + ", disponivel=" + disponivel + '}';
+        return "Região: " + regiao + "\n valor: " + valor + "\nDisponível? " + disponivel + "\nCódigo: " + codigo;
     }
 }

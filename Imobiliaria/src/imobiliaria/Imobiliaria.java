@@ -94,7 +94,7 @@ public class Imobiliaria {
             return false;
         }else{
             for(Imovel i: imoveis){
-                i.toString();
+                System.out.println(i.toString());
             }
             return true;
         }
@@ -105,16 +105,15 @@ public class Imobiliaria {
         listarImoveis();
         System.out.println("Digite o código do imóvel desejado: ");
         codigoImovel = leitor.nextInt();
-        for(Imovel i: imoveis){
-            if(i.getCodigo() == codigoImovel){
-                if(i.isDisponivel()){
-                    i.setDisponivel(false);
+        for(int i = 0; i < imoveis.size(); i++){
+            if(imoveis.get(i).getCodigo() == codigoImovel){
+                if(imoveis.get(i).isDisponivel()){
+                    imoveis.get(i).setDisponivel(false);
                     System.out.println("Imóvel alugado com sucesso!");
+                    break;
                 }else{
                     System.out.println("Imóvel indisponível");
                 }
-            }else{
-                System.out.println("Código inexistente");
             }
         }
     }

@@ -29,6 +29,6 @@ public class Residencial extends Imovel{
 
     @Override
     public String toString() {
-        return "Residencial{" + "numeroQuartos=" + numeroQuartos + '}';
+        return super.toString() + "\nQuantidade de quartos: " + numeroQuartos;
     }
 }

@@ -27,7 +27,7 @@ public class Comercial extends Imovel{
 
     @Override
     public String toString() {
-        return "Comercial{" + "areaUtil=" + areaUtil + '}';
+        return super.toString() + "\nÁrea útil: " + areaUtil;
     }
     
 }
