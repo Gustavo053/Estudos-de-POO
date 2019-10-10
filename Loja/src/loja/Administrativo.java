@@ -33,7 +33,7 @@ public class Administrativo extends Funcionario{
 
     @Override
     public String toString() {
-        return "Administrativo{" + "horas=" + horas + '}';
+        return "Horas do administrador: " + horas;
     }
     
 }

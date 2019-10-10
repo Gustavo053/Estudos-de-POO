@@ -33,7 +33,7 @@ public class Vendedor extends Funcionario{
     
     @Override
     public String toString() {
-        return "Vendedor{" + "vendas=" + vendas + '}';
+        return "Vendas: " + vendas;
     }
     
 }
