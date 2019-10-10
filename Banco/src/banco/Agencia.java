@@ -39,6 +39,9 @@ public class Agencia {
                     numeroConta = entrada.nextInt();
                     acessarConta(numeroConta);
                     break;
+                case 4:
+                    System.out.println("Finalizado");
+                    break;
                 default:
                     System.out.println("Opção inválida! ");
             }     
@@ -47,7 +50,7 @@ public class Agencia {
     }
     
     private void criarConta(){
-        System.out.println("[1] - Corrente / [2] - Poupança: ");
+        System.out.println("[1] - Corrente / [2] - Poupança / [3] - Voltar: ");
         int opcao = entrada.nextInt();
         int numero;
         double saldo;
@@ -69,6 +72,8 @@ public class Agencia {
                 System.out.print("Digite o débito da tarifa: ");
                 double rendimento = entrada.nextDouble();
                 contas.add(new Poupanca(numero, saldo, rendimento));
+                break;
+            case 3:
                 break;
             default:
                 System.out.println("Opção inválida");
