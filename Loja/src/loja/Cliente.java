@@ -27,7 +27,7 @@ public class Cliente extends Pessoa{
 
     @Override
     public String toString() {
-        return "Código do cliente: " + codigo;
+        return super.toString() + "\nCódigo do cliente: " + codigo;
     }
     
 }

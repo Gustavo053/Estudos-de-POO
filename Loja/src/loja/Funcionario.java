@@ -39,6 +39,6 @@ public abstract class Funcionario extends Pessoa{
     
     @Override
     public String toString(){
-        return "Matrícula do funcionário: " + matricula + "\n Salário do funcionário: " + salario;
+        return super.toString() + "\nMatrícula do funcionário: " + matricula + "\n Salário do funcionário: " + salario;
     }
 }

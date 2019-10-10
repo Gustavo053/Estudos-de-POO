@@ -122,7 +122,7 @@ public class Loja {
         System.out.print("Informe o cpf: ");
         cpf = entrada.next();
         if(buscar(cpf) != null){
-            buscar(cpf).toString();
+            System.out.println(buscar(cpf).toString());
         }else{
             System.out.println("Usuário não encontrado");
         }
@@ -140,7 +140,7 @@ public class Loja {
     
     private void listar(){
         for(Pessoa i: lista){
-            i.toString();
+            System.out.println(i.toString());
         }
     }
     
@@ -166,10 +166,10 @@ public class Loja {
         for(int i = 0; i < lista.size(); i++){
             if(lista.get(i) instanceof Administrativo){
                 ((Administrativo) lista.get(i)).calculaPagamento();
-                ((Administrativo) lista.get(i)).toString();
+                System.out.println(((Administrativo) lista.get(i)).toString());
             }else if(lista.get(i) instanceof Vendedor){
                 ((Vendedor) lista.get(i)).calculaPagamento();
-                ((Vendedor) lista.get(i)).toString();
+                System.out.println(((Vendedor) lista.get(i)).toString());
             }else{
                 System.out.println("Um cliente não pode usar essa função");
             }
