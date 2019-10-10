@@ -98,7 +98,7 @@ public class Agencia {
     private void acessarConta(int numero){
         for(int i = 0; i < contas.size(); i++){
             if(contas.get(i).getNumero() == numero){
-                contas.get(i).toString();
+                System.out.println(contas.get(i).toString());        
             }else{
                 System.out.println("Conta inexistente! ");
             }
