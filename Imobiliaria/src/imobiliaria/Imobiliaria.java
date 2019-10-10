@@ -110,6 +110,8 @@ public class Imobiliaria {
                 if(i.isDisponivel()){
                     i.setDisponivel(false);
                     System.out.println("Imóvel alugado com sucesso!");
+                }else{
+                    System.out.println("Imóvel indisponível");
                 }
             }else{
                 System.out.println("Código inexistente");
