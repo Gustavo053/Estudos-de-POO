@@ -147,13 +147,15 @@ public class Loja {
     private void adicionarProdutividade(){
         System.out.print("Informe o cpf: ");
         cpf = entrada.next();
-        if(buscar(cpf) != null){
+        Pessoa p = buscar(cpf);
+        if(p != null){
+            p = buscar(cpf);
             System.out.print("Digite a produtividade: ");
             double produtividade = entrada.nextDouble();
-            if(buscar(cpf) instanceof Administrativo){
-                ((Administrativo) buscar(cpf)).setHoras(produtividade);
-            }else if(buscar(cpf) instanceof Vendedor){
-                ((Vendedor) buscar(cpf)).setVendas(produtividade);
+            if(p instanceof Administrativo){
+                ((Administrativo) p).setHoras(produtividade);
+            }else if(p instanceof Vendedor){
+                ((Vendedor) p).setVendas(produtividade);
             }else{
                 System.out.println("Um cliente não pode usar essa função");
             }

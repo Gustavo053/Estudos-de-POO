@@ -27,8 +27,7 @@ public class Vendedor extends Funcionario{
     
     @Override
     public double calculaPagamento(){
-        setSalario(getSalario() * (1.10 * getVendas()));
-        return getSalario();
+        return (getSalario() * (1.10 * getVendas()));
     }
     
     @Override

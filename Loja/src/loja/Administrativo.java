@@ -27,8 +27,7 @@ public class Administrativo extends Funcionario{
 
     @Override
     public double calculaPagamento() {
-        setSalario(getSalario() * (1.01 * getHoras()));
-        return getSalario();
+        return (getSalario() * (1.01 * getHoras()));
     }
 
     @Override
